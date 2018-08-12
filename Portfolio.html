@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sumaya Yusuf</title>
+        <link rel="shortcut icon" type="image/ico" href="image.favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+        <style>
+            header{
+                background-color: rgba(0, 0, 0, 0.7);
+                position: fixed;
+                z-index: 10;
+                top: 0;
+                left:0;
+                width: 100%;
+                color: #fff;
+                padding: 35px 100px 20px;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            header a{
+                text-decoration: none;
+                color: white;
+                opacity: .6;
+                cursor: pointer;
+            }
+            header a:hover{
+                opacity: 1;
+            }
+            header nav ul{
+                font-size: 14px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            header nav li{
+                margin: 0 6px;
+            }
+            header nav li:first-child{
+                margin-left: 0;
+            }
+            header nav li: last-child{
+                margin-right: 0;
+            }
+            @media(max-width: 1000px){
+                header {
+                    text-align: center;
+                    flex-direction: column;
+                    padding: 20px 50px;
+                }
+                header img{
+                    width: 75%;
+                }
+                header nav{
+                    justify-content: space-around;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body id="top">
+        <header>
+            <h2><a href="#" target="_blank"><img src="" alt=""></a></h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#social-media">Links</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="hero">
+            <div class="background-image"></div>
+            <h1>Sumaya Yusuf Portfolio</h1>
+            <h3>My Future Starts Here</h3>
+            <a href="https://github.com/smymohd?tab=repositories" class="btn" target="_black">GITHUB</a>
+
+        </div>
+        <!---************************-->
+        <div id="about">
+            <h3 class="title">About Me</h3>
+            <div id="two-cols">
+                <div class="about-img"><img src="images/flower.jpeg" alt="flower"></div>
+                <div class="about-bio">
+                    <p>My name is Sumaya Yusuf, I moved to United States seven years ago. I have five children and I'm full time student. I joined coding bootcamp in an attempt to create fullfing .</p>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+            <hr>
+        </div>
+        <div id="gallery" class="photo-gallery">
+            <h3 class="title">Portfolio</h3>
+            <p>Released under the CC0 license, Pexels helps people to get access to beautiful photos that they can use freely in projects like websites,
+                 blogs, products or book covers. Some of the best free stock photos are at Pexels.</p>
+            <hr>
+            <ul class="grid">
+                <li class="small" style="background-image: url('images/psychic.png');"><a href="https://github.com/smymohd/Psychic-Game" class="btn" target="_black">PSYCHIC GAME</a></li>
+                <li class="small" style="background-image: url('images/trivia.jpg');"><a href="https://github.com/smymohd/TriviaGame" class="btn" target="_black">TRIVIA GAME</a></li>
+                <li class="small" style="background-image: url('images/gify.jpeg');"><a href="https://github.com/smymohd/GifTastic" class="btn" target="_black">GITGIFY</a></li>
+                <li class="small" style="background-image: url('images/node.png');"><a href="https://github.com/smymohd/liri-node-app" class="btn" target="_black">LIRI-NODE</a></li>
+                <li class="small" style="background-image: url('images/traintime.jpeg');"><a href="https://github.com/smymohd/Train-Time" class="btn" target="_black">TRAIN TIME</a></li>
+                <li class="small" style="background-image: url('images/online shopping.jpg');"><a href="https://github.com/smymohd/Bamazon" class="btn" target="_black">ONLINE SHOPPING</a></li>
+                <li class="small" style="background-image: url('images/burger.jpeg');"><a href="https://github.com/smymohd/burger" class="btn" target="_black">BURGER</a></li>
+                <li class="small" style="background-image: url('images/friendfinder.jpeg');"><a href="https://github.com/smymohd/FriendFinder" class="btn" target="_black">FRIEND FINDER</a></li>
+                <li class="small" style="background-image: url('images/mongo.png');"><a href="https://github.com/smymohd/Scraper" class="btn" target="_black">MONGOO SCRAPER</a></li>
+            </ul>     
+        </div>
+        <hr>
+        <!--*******************************-->
+        <div id="contact">
+            <h3 class="title">Bootcamp Location</h3>
+            <section class="flexbox-section">
+            <p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.0384921652358!2d-93.1865585850132!3d44.98352917340911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32c834c6ceaff%3A0xa44c0afaa9c7bef4!2sRuttan+Hall!5e0!3m2!1sen!2sus!4v1534071898442" 
+                width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </p>
+            <p>1994 Buford Avenue<br>
+             20 Ruttan Hall, Saint Paul, MN 55108<br>
+            Unites States
+            </p>
+            </section>
+        </div>
+        <!--*******************************-->
+        <div id="contact-form">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7UDfoeAPWWy2a0OrNMXjUJAhEZmweCGAk1SuOKVHEcANqWQ/viewform?embedded=true" 
+            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
+        <!--*******************************-->
+        <footer id="social-media">
+            <ul>
+                <li><a href="# " target="_blank"><i class="fab fa-twitter-square"></i></a><li>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a><li>
+                <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a><li>
+                <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a><li>
+            </ul>
+           <p>&copy; <script>document.write(new Date().getFullYear());</script> It sure is fun to create websites</p>
+            <p> &ldquo; Tell me and I forget, teach me and I may remember, involve me and I may learn. &rdquo; <br> &mdash; Benjamin Franklin</p>
+        </footer>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click',function (e) {e.preventDefault();
+        
+                var target = this.hash;
+                var $target = $(target);
+        
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top-100
+                }, 900, 'swing', function () {
+                    window.location.hash = target-100;
+                });
+                   });
+        });
+        </script>
+    </body>
+</html>
