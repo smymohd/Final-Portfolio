@@ -31,7 +31,7 @@ hr{
     height: 2px;
     background-color: #2196f3;
     border: 0;
-    margin: 40px auto;
+    margin: 100px auto;
 
 }
 
@@ -49,7 +49,7 @@ Hero
     align-items: center;
     justify-content: center;
 
-    background-image: url('images/tech.jpeg');
+    background-image: url('images/back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -66,17 +66,17 @@ Hero
 }
 #hero a.btn{
     color: white;
-    background-color: #131633;
+    background-color: #2196f3;
     text-decoration: none;
     padding: 20px 46px;
     border-radius: 8px;
     font-weight: bold;
     text-align: center;
     opacity: 1;
-    border: 2px sold white;;
+    border: 2px solid white;;
 }
 #hero a.btn:hover{
-    background-color: #2196f3;
+    background-color: #131633;
 }
 @media(max-width: 800px){
      #hero{
@@ -110,14 +110,16 @@ About
     align-items: center;
 }
 .about-img{
-    border: 4px solid #2196f3;
+    border: 2px solid #2196f3;
     background-color: #2196f3;
+   
 }
 .about-bio {
     width: 65%;
     max-width: 800px;
     line-height: 2;
     margin-left: 20px;
+    font-size: 20px;
 }
 @media (max-width: 600px){
     #about, #two-cols{
@@ -155,6 +157,16 @@ Gallery
 }
 #gallery .grid li.large{
     flex-basis: 60%;
+}
+#gallery .grid li a.btn{
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+    opacity: 1;
+    border: 1px white;;
 }
 #gallery p{
     max-width: 800px;
